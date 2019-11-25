@@ -1,0 +1,61 @@
+#quemsomosimgfirst, #quemsomosimgsecond {
+    max-width: 70%;
+    text-align: center
+}
+.conteudo-institucional{
+    font-size: 18px;
+}
+#sobrenos{
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+
+.titulo-institucional{
+    font-size: 24px;
+    border-bottom: none;
+}
+
+#politica, #faq, #trocas{
+    text-align: left !important;
+   
+}
+
+.imgtexto{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+
+.revista{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#faq h3 {
+    color: #93A0C4;
+}
+
+a {
+    color: #919fc2;
+}
+
+#co_form  input,  #co_form  textarea{
+    border-radius: 0px;
+}
+
+
+#seguranca .EstTabTopo {
+    background: rgb(226, 226, 226);
+    padding: 10px;
+    line-height: 24px;
+    font-weight: 900;
+}
+
+
+#seguranca .StyPayment {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}

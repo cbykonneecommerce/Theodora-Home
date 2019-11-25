@@ -1,0 +1,37 @@
+.resultado-busca-filtro .compare, fieldset.filterBy {
+    display: none;
+}
+
+select, fieldset {
+
+    outline-style: none;
+}
+
+.orderBy label {
+    display: none;
+}
+
+
+.prateleira .box-item:hover img{
+    opacity: 1 !important;
+  }
+
+.pages .pgCurrent {
+    background-color: #919FC1 !important;
+}
+
+.installment {
+    color: #b3bbd1 !important;
+}
+
+.title-category {
+    border-bottom: none;
+}
+
+@media (max-width: 600px)  {
+    
+    fieldset {
+        
+        margin-top: 1em;
+    }
+}

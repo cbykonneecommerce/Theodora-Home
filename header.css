@@ -1,0 +1,293 @@
+.welcome-bar{
+    background-color: #919FC1 !important;
+    
+}
+
+
+#wishlist {
+    text-align: right;
+}
+.header-container {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 100000;
+    opacity: 0.8;
+}
+.header-container:hover{
+    opacity: 1;
+}
+
+#storenav {
+    margin-left: 19%;
+}
+#storenav li{
+    margin-right: 1em;
+}
+.welcome-bar p, .welcome-bar a, .welcome-bar span {
+    color: white !important;
+}
+
+.link-logo img {
+    max-width: 30%;
+}
+
+
+.header .search .busca, .header .sing-in {
+    margin-top: 1em;
+}
+
+
+.fulltext-search-box{
+    color: #8695ac !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important; 
+    border-bottom: 1px solid #919FC1 !important;
+    border-radius: 0px !important;
+    outline-style:none;
+    box-shadow:none;
+
+}
+
+.btn-orders, .btn-login {
+    border: none;
+    box-shadow: none;
+    background-color: white !important;
+}
+.btn-buscar {
+    background-image: url(/arquivos/search_icon.png) !important;
+    background-repeat: no-repeat !important;
+    color: transparent !important;
+    border-color: transparent !important;
+    outline-style:none;
+    box-shadow:none;
+    border: none;
+    background-color: white !important;
+}
+
+.btn-mini-cart{
+    border-color: transparent;
+}
+
+#mobile-cart, #desktop-cart{
+    border-color: transparent !important;
+    outline-style:none;
+    box-shadow:none;
+}
+#mobile-cart img  {
+    max-width: 70%;
+}
+#desktop-cart img {
+    max-width: 30%;
+}
+
+#menu-mobile{
+    border-color: transparent !important
+}
+#menu-mobile i {
+    color: #919FC1;
+    border-color: transparent;
+}
+
+#hamburguer .btn {
+    color: #919FC1;
+    font-size: 2.5em;
+    border-color: transparent;
+}
+
+.header .mini-cart span.badge {
+
+    top: 0 !important;
+    right: 0 !important;
+}
+.mini-cart-qty-admake {
+    background-color: rgb(145, 159, 193) !important;
+}
+
+.btn-login, .btn-orders {
+    color: #919FC1;
+    border-color: transparent
+}
+
+.mini-cart-botao .btn-finalizar-compra {
+    background-color: #8594ab !important
+}
+#menu-mobile i {
+    color: white;
+}
+
+#menu-mobile .fa-bars {
+    color: transparent
+}
+#menu-mobile{
+    opacity: 0.8;
+    background-color: #919FC1;
+
+}
+
+#menu-mobile ul li a, #menu-mobile ul li a {
+    color: white
+}
+
+#top-menu .menu{
+    background-color: white;
+}
+
+#top-menu .menu li a {
+    color: #8695ac;
+}
+
+
+#admake-advanced-filter {
+    display: none !important;
+}
+
+
+.menu-departamento{
+    display: block !important;
+    overflow: visible !important;
+    margin-top: -25px;
+    padding-top: 1em;
+    
+    
+}
+
+.menu-departamento a {
+    color: #8695ac !important
+}
+
+#mini-cart-admake {
+    opacity: 1;
+}
+.deptonav {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.92;
+    z-index: 9999999999;
+    padding-top: 2em;
+    padding-left: 2em;
+    
+}
+
+.deptonav ul li {
+    margin-bottom: 2em;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  
+    width: 100%;
+    
+    z-index: 1;
+    top: 0;
+    left: 0;
+  
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-angle-down, .fa-angle-up  {
+    float: right;
+    padding-right: 8px;
+  }
+
+
+  #backtotop {
+        display: block;
+        position: fixed;
+        bottom: 55px;
+        right: 15px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #8B99BA;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 2em;
+        height: 2em;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+@media (max-width: 600px)  {
+    
+    #wishlist {
+        
+       display: none;
+    }
+    #backtotop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1450px) { 
+    #storenav {
+        margin-left: 3%;
+    }
+
+    #storenav li {
+        margin-right: 1.6em;
+    }
+}
+
+@media screen and (min-width: 1451px) { 
+    .link-logo img {
+        max-width: 20%;
+    }
+
+    #desktop-cart img{
+        max-width: 42% !important;
+    }
+    #coracao-icon {
+        max-width: 40% !important;
+    }
+
+}

@@ -1,0 +1,299 @@
+#menu-giftlist {
+    background-image: url(/arquivos/box-giftlist.png);
+    height: 23em;
+    background-size: contain;
+    width: 20em;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+input {
+    border-radius: 0px;
+    color: #919fc2 
+}
+
+.resultado-busca-filtro > fieldset select {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    outline-style: none;
+    box-shadow: none;
+    color: rgb(134, 149, 172) !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-width: 1px 1px 1px;
+    border-style: solid solid solid;
+    border-image: initial;
+    padding: 5px;
+    border-bottom: 1px solid rgb(145, 159, 193) !important;
+    border-radius: 0px !important;
+}
+
+#refer-a-friend-form-gift-list{
+    padding: 2em;
+}
+
+#legFriendsData , #legMessage{
+    padding-top: 1em
+}
+#giftlistsearchform .giftlistsearchul li select, #giftlistsearchform .giftlistsearchul li input, .giftlistform fieldset .giftlistul li select, .giftlistform fieldset .giftlistul li input, .giftlistform fieldset .giftlistul li textarea {
+    width: 90%;
+}
+label {
+    margin-right: 20px;
+}
+h2, h3, .giftlistinfo-description, .list-members, span  {
+    color: #919fc2;
+}
+
+.giftlistinfo-description {
+    text-transform: uppercase;
+}
+
+.giftlistinfo-actions {
+    margin-top: 2em;
+}
+
+.giftlistinfo-title{
+    margin-bottom: 2em;
+    color: #919fc2;
+}
+
+.admin-only.action-manage, li .data .quickview, .giftlist-print-wrapper, .giftlist-insertsku-wrapper, .resultado-busca-filtro .compare, .sendtocart-8, .quickView{
+    display: none !important;
+}
+
+.giftlistinfo-event ul{
+    margin-top: 2em;
+}
+
+
+.giftlistinfo-event .event-title {
+    display: block;
+    font-size: 24px;
+}
+
+.giftlistinfo-event ul li{
+    padding-left: 1em;
+    display: inline-block;
+    color: #919FC1;
+}
+
+.giftlistinfo-event {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.giftlistinfo-members .list-members {
+    display: inline-flex;
+    margin-top: 3em;
+}
+.giftlistinfo-members .list-members .member {
+    margin-bottom: 1em;
+    margin-right: 3em;
+}
+
+.member .title, .member li span {
+    text-transform: uppercase;
+}
+
+
+.member .title {
+    margin-bottom: 1em;
+}
+
+#refer-a-friend-form-gift-list {
+    background-color: white !important
+}
+
+#TB_overlay {
+    background-color: black;
+    opacity: 0.5;
+}
+legend {
+    border-bottom: none !important;
+}
+ 
+#menu-giftlist ul {
+    padding-left: 2em;
+    padding-top: 8em;
+}
+
+.page-number {
+    background-color: #919FC1 !important;
+}
+#gift-manager {
+    padding-left: 1em;
+}
+#menu-giftlist li a {
+    background-color: transparent !important;
+}
+
+#giftlistsearchform .giftlistsearchul li select, #giftlistsearchform .giftlistsearchul li input,
+.giftlistform fieldset .giftlistul li select, .giftlistform  fieldset .giftlistul li input, .giftlistform fieldset  .giftlistul li textarea
+ {
+   
+    border-radius: 0px;
+    color: #919fc2 
+}
+
+#giftlistsearchform .giftlistsearchul li , .giftlistul li{
+    margin-top: 1.5em;
+}
+
+
+.giftlist-search {
+    color: #919fc2
+}
+
+#giftlistsearchfind{
+    background-color: #919FC1;
+    color: white !important;
+    border: none;
+    outline-style: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #919fc2;
+    
+  }
+  
+
+  .giftlistinfo-link input {
+    width: 52%;
+  }
+
+
+.send-to-cart-wrapper {
+    margin-top: 4em;
+}
+
+.giftlist-body-action #glstc-10 {
+    background-color: none;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0;
+}
+  #glstc-10 {
+    background-color: #919fc2;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 2em;
+    color: white !important;
+
+  }
+
+  .giftlist-body-action #glstc-10 {
+    color: #919fc2;
+    background-color: transparent;
+  }
+
+
+
+  .vitrine.resultItemsWrapper .n3colunas ul li, .vitrine.resultItemsWrapper .n2colunas ul li{
+      text-align: center
+  }
+
+  .data h3 a, .data .category a {
+      color: #777
+  }
+
+
+  /*#TB_ajaxContent {
+    height: auto !important;
+  }*/
+
+  #TB_ajaxContent  input{
+    margin-top: 15px;
+  }
+  /*#TB_window {
+      margin-top: -320px !important;
+  }*/
+
+  .is-checklist-item.from-list.first.last input {
+    min-height: 19px;
+    margin-right: 4px;
+  }
+
+
+
+  .giftlist.giftlist-form.giftlist-create #giftlistname{
+    width: 70%;
+  }
+
+  .giftlist.giftlist-form.giftlist-create #giftlisturl {
+      width: 31%;
+  }
+
+  #giftlistmessage, #membersurname1, #membersurname2 {
+      width: 73%;
+  }
+  #giftlisteventlocation {
+    width: 69%;
+  }
+  #membername1, #membername2, #membermail1, #membermail2 {
+    width: 79%;
+  }
+
+  #giftlistv2save, #giftlistv2cancel {
+    width: 89%;
+    margin-top: 1em;
+    background-color: #919fc2;
+    color: white;
+  }
+
+
+
+.product-name {
+    font-size: 22px;
+}
+.product-name  a{
+    color:#777;
+}
+
+.price {
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+
+.buy-buttom {
+    margin-bottom: 1em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    color: white;
+    border: solid 1px #919FC1;
+    font-size: 20px;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+
+.glmanager-type.giftlisttype-3 h2, .glmanager-type.giftlisttype-4 h2{
+    margin-bottom: 1em;
+}
+.action-manage {
+    display: none;
+}
+td{
+    color:#919fc2;
+  }
+  
+
+
+  @media (max-width: 600px)  {
+    
+    .giftlist-table  thead tr th, .giftlist-table tbody tr td{
+        text-align: center;
+
+    }
+
+    #TB_ajaxContent {
+        margin-left: 8em !important;
+        width: 400px !important;
+        height: auto !important;
+    }
+}

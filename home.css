@@ -1,0 +1,53 @@
+.homeTitles {
+    color: #919FC1;
+}
+
+.owl-controls .owl-pagination .owl-page {
+   
+    border: 2px solid #919FC1;
+}
+.owl-controls .owl-pagination .owl-page.active, .owl-controls .owl-pagination .owl-page.active:hover {
+    background-color: rgb(145, 159, 193);
+}
+
+#carouselmarcas {
+    padding-bottom: 4.5em;
+}
+
+.showcase-default h2 {
+    text-align: center;
+    color: #919FC1;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 1890px){
+    #bannerA1, #bannerA2 {
+        height: 242px !important;
+    }
+    #bannerB1, #bannerB2, #bannerB3 {
+        height: 416px !important;
+    }
+
+    #bannerC1, #bannerC2 {
+        height: 456px !important;
+    }
+    #bannerDestinos1, #bannerDestinos2, #bannerDestinos3, #bannerDestinos4 {
+        height: 117px !important; 
+
+    }
+    #bannerD1 {
+        height: 470px !important;
+    }
+  }
+
+
+  @media screen and (max-width: 450px) {
+      #home-content {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+      }
+  }
+  /**home-content/

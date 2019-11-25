@@ -1,0 +1,99 @@
+<div id="bannerA1">
+</div>
+
+<style>
+#bannerA1{
+   width: 555px;
+  height: 247px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px
+}
+
+
+#bannerA1::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("/arquivos/Retangular_1.jpg"); //Modifique o banner aqui
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform .5s linear;
+}
+
+#bannerA1:hover::before{
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 640px)
+{
+   #bannerA1 {
+       width: 100%;
+       margin: 0px;
+       height: 10em;
+     }
+}
+</style>
+
+
+
+
+<div class="box-banner"><a href="#"><img width="189" height="70" src="/arquivos/brand_assouline.png" complete="complete"></a></div>
+
+
+
+
+
+<div class="item">
+    <div class="box-banner"><a href="#"><img width="550" src="/arquivos/inferior_2.jpg" complete="complete"></a></div>
+    </div>
+
+    621 × 196
+
+
+
+
+
+
+
+    <form id="co_form" action="javascript:FormValidate();" method="post">
+      <input type="hidden" id="master_data_store_name" name="master_data_store_name" value="'theodorahome'" />
+      <input type="hidden" id="master_data_data_entity" name="master_data_data_entity" value="' + dataEntity + '" />
+      <div class="form-field string required cl_first_name form-group">
+      <label for="cl_first_name">Nome *</label>
+      <input id="cl_first_name" class="form-control" maxlength="100" name="cl_first_name" type="text" />
+      </div>
+      <div class="form-field string required cl_last_name form-group">
+      <label for="cl_last_name">Sobrenome *</label>
+      <input id="cl_last_name" class="form-control" maxlength="100" name="cl_last_name" type="text" />
+      </div>
+      <div class="form-field string required cl_email form-group" >
+      <label for="cl_email">E-mail *</label>
+      <input id="cl_email" class="form-control" maxlength="100" name="cl_email" type="text"/>
+      </div>
+      <div class="form-field string required cl_home_phone form-group">
+      <label for="cl_home_phone">Telefone *</label>
+      <input id="cl_home_phone" class="form-control" maxlength="100" name="cl_home_phone" type="text" />
+      </div>
+      <div class="form-field string required cl_phone form-group">
+      <label for="cl_phone">Celular</label>
+      <input id="cl_phone" class="form-control" maxlength="100" name="cl_phone" type="text" />
+      </div>
+      <div class="form-field string required co_type form-group">
+      <label for="co_type">Tipo *</label>
+    <select name="co_type" id="co_type">
+      <option value="">-</option>
+      <option value="Sugestão">Sugestão</option>
+    <option value="Dúvida">Dúvida</option>
+    <option value="Reclamação">Reclamação</option>
+    </select>
+      </div>
+      <div class="form-field string required co_description form-group">
+      <label for="co_description">Descrição *</label>
+    <textarea id="co_description" name="co_description" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="form-field submit"><input id="commit" name="commit" type="submit" value="Enviar"/></div>
+         </form>

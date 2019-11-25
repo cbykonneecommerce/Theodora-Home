@@ -1,0 +1,92 @@
+.prateleira .price .old-price, .prateleira .price .best-price, .installment {
+    color: #919FC1 !important
+}
+
+.hidden-button {
+    display: none;
+    background-color: #b2bcd3;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    margin-top: -47px;
+    position: absolute;
+    text-align: center;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.prateleira .product-name a {
+    font-size: 18px
+}
+
+.prateleira .product-desc a {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.prateleira .product-image::after {
+    content: none !important;
+    background: none !important;
+}
+
+.prateleira .box-item:hover img {
+    opacity: 1 !important;
+}
+
+.resultado-busca-filtro>fieldset select {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    outline-style: none;
+    box-shadow: none;
+    color: rgb(134, 149, 172) !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    padding: 5px;
+    border-bottom: 1px solid rgb(145, 159, 193) !important;
+    border-radius: 0px !important;
+}
+
+.navigation-tabs {
+    background: none;
+}
+
+.HideCor, .HideFragrancia, .HideTamanho, .HideMarca {
+    font-size: 1.3em;
+}
+
+.Marca li {
+    margin-bottom: 10px;
+}
+
+.menu-navegue {
+    display: none !important;
+}
+
+#colection-showcase {
+    width: 57%;
+    margin-left: 4.5em;
+}
+
+@media screen and (min-width: 450px) and (max-width: 1890px) {
+    #colection-showcase {
+        width: 89%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #colection-showcase {
+        width: 66%;
+        margin-left: 2.9em;
+    }
+
+    .prateleira ul .moveis {
+        width: 50% !important;
+        float: left;
+    }
+}

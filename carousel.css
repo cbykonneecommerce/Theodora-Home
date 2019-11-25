@@ -1,0 +1,31 @@
+
+.owl-controls .owl-pagination .owl-page, .showcase-owl .owl-controls .owl-buttons > div .btn {
+   
+   /* border: 2px solid #919FC1;*/
+   display: none;
+}
+
+
+.owl-controls .owl-pagination .owl-page.active, .owl-controls .owl-pagination .owl-page.active:hover {
+    background-color: rgb(145, 159, 193);
+}
+
+#carouselmarcas {
+    padding-bottom: 4.5em;
+}
+
+
+#owl-demo .owl-carousel .owl-item, #carouselmarcas .owl-carousel .owl-item {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.owl-controls .owl-buttons  {
+    display: none;
+}
+
+#owl-demo  .owl-item  {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+

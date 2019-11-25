@@ -1,0 +1,67 @@
+#TB_window {
+    font-family: 'Lato',sans-serif !important;
+    background-color: white;
+    width: 25%;
+    z-index: 999999999999999;
+}
+.glis-title {
+    font-size: 2em;
+}
+
+.glis-selected {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.glis-existing-title {
+    font-size: large;
+}
+
+
+
+.glis-ul li a , #TB_closeWindowButton{
+    color: #919FC1 !important
+}
+
+
+#TB_overlay{
+    opacity: 0.8;
+    background-color: #919FC1;
+}
+
+.glis-ul{
+    margin-top: 1em;
+}
+
+.glis-sku-single-item {
+    padding-left: 1em;
+}
+
+
+.glis-popup-link.glis-thickbox.tb-added.qvBinded {
+    border-style: none;
+    border-width: 2px;
+    border-color: #919FC1;
+    padding: 1%;
+    font-size: large;
+    font-weight: bold;
+    color: #919FC1;
+    text-decoration: none;
+}
+
+.glis-sku-single.glis-sku-default {
+    display: none;
+}
+@media (max-width: 600px)  {
+    
+    #TB_ajaxContent {
+        
+        padding-left: 26%;
+        padding-right: 20%;
+    }
+
+    #TB_closeWindowButton{
+        padding-right: 10em;
+        }
+}
+

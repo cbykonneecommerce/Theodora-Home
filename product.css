@@ -1,0 +1,182 @@
+input, .btn, .buy-button.buy-button-ref {
+    border-radius: 0px !important;
+}
+
+.product-details .price-box {
+    border-bottom: 0px !important;
+}
+.product-info .shipping-box {
+    border-top: 0px !important;
+}
+
+#description .title {
+    margin-bottom: 25px;
+}
+
+
+.zoomWindow {
+    margin-left: 4em;
+    width: 520px;
+}
+.hvr-sweep-to-right::before {
+    background:white !important;
+}
+
+.hvr-sweep-to-right:hover {
+   
+    color: #919FC1 !important; 
+    border: 1px solid #919FC1
+}
+
+#txtCep {
+    border-color: #919FC1
+}
+.buy-button-box .box-qtd .qtd, .product-info .shipping-box .cep-busca .bt, .product-info .shipping-box label .fitext {
+    color: #919FC1
+    
+}
+
+.product-description #caracteristicas tr {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.product-details .product-name .productName, .product-details .price-box .descricao-preco .valor-por strong,
+.product-details .price-box .descricao-preco .valor-por strong, #comprar-flutuante .descricao-preco .valor-por strong,
+.product-details .product-name .brandName a {
+    color:#212121 !important;
+}
+.buy-button.buy-button-ref {
+    padding-left: 2.5em;
+    padding-right: 1.5em;
+}
+
+.skuBestPrice {
+    font-size: 25px;
+}
+#caracteristicas  h4{
+    display: none !important;
+}
+
+.buy-button-box .box-qtd {
+    border: 1px solid #919FC1;
+    border-radius: 0px;
+}
+
+
+#box-bread-brumb .bread-crumb ul li:first-of-type{
+    display: none;
+}
+ .qtd {
+    border-right: 1px solid #919FC1;
+}
+.btn.btn-menos, .btn.btn-mais {
+    color:#919FC1
+}
+.buy-button.buy-button-ref i {
+    margin-left: 1.5em;
+}
+.buy-button.buy-button-ref, .buy-button.buy-button-ref:hover, #reviews #lnkPubliqueResenha{
+    background-color: #919FC1 !important;
+}
+
+.product-info .shipping-box label {
+    color:#818faf !important;
+}
+
+.product-info .shipping-box .freight-btn {
+    background: #8695ac !important;
+    margin-top: -4px;
+    color: white;
+}
+
+
+
+.product-info .seletor-sku .select label.checked, .product-info .seletor-sku .select label.sku-picked {
+    border-color: rgb(145, 159, 193);
+}
+
+span#spnRatingProdutoTop {
+  
+    display: none;
+}
+
+
+.preco-a-vista.price-cash, .specification {
+    display: none !important
+}
+
+.valor-dividido.price-installments {
+    margin-top: 1em;
+}
+
+
+#comprar-flutuante .productName {
+    font-size: 24px;
+}
+
+
+.product-description .btn-group .btn-default {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.buy-button.buy-button-ref {
+    text-transform: uppercase;
+}
+
+.customize-tab {
+    display: none;
+}
+.customize-tab input {
+    text-transform: uppercase;
+    width: 10em;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-bottom: 1em;
+    border-color: #919FC1;
+    outline-style: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+#confirm-custom{
+    margin-left: 10px;
+    color: #919FC1;
+}
+
+
+
+
+.glis-create-form {
+    margin-top:1em;
+}
+.glis-create-form-type, .glis-create-form-name {
+  margin-bottom: 1em;
+}
+.glis-new-info {
+    line-height: 16px;
+}
+
+
+@media (max-width: 600px)  {
+  
+  .giftlist-table  thead tr th, .giftlist-table tbody tr td{
+      text-align: center;
+
+  }
+
+  #TB_ajaxContent {
+      margin-left: 8em !important;
+      width: 100% !important;
+      height: auto !important;
+      background-color: white;
+  }
+
+  #TB_window {
+      background-color: transparent;
+  }
+}
