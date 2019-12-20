@@ -272,6 +272,11 @@ legend {
     padding-bottom: 0.6em;
 }
 
+.buy-buttom a {
+    text-decoration: none;
+}
+
+
 .glmanager-type.giftlisttype-3 h2, .glmanager-type.giftlisttype-4 h2{
     margin-bottom: 1em;
 }
@@ -282,6 +287,10 @@ td{
     color:#919fc2;
   }
   
+
+  .giftlistinfo-actions .list-action li{
+    margin-bottom: 0.7em;
+}
 
 
   @media (max-width: 600px)  {

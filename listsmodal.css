@@ -4,20 +4,58 @@
     width: 25%;
     z-index: 999999999999999;
 }
+
+#TB_ajaxContent {
+    padding: 2px 8px 15px 30px !important;
+}
 .glis-title {
-    font-size: 2em;
+    font-size: 22px;
 }
 
+.glis-new-title {
+display: none;
+}
 .glis-selected {
     margin-top: 2em;
     margin-bottom: 1em;
 }
-
+.glis-newlisttype {
+    border-radius: 0px;
+}
 .glis-existing-title {
     font-size: large;
 }
 
+.glis-existing-title {
+    font-size: 20px !important;
+}
 
+
+.glis-create-form-submit a{
+    background-color: #919FC1 ;
+    border: 0 none;
+    border-radius: 6px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+
+.modal-label{
+    margin-right: 2em;
+}
+.glis-create-form-name label {
+    margin-right: 2.7em;
+}
+
+.glis-create-form-name input {
+    width: 38%;
+}
 
 .glis-ul li a , #TB_closeWindowButton{
     color: #919FC1 !important

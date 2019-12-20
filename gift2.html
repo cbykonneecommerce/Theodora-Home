@@ -1,0 +1,64 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+
+<a title="$escapedName" class="highlight" href="$uri">$product.HightLight</a>
+<a class="product-image" title="$escapedName" href="$uri">
+        <!-- $product.GetImageTag(2)-->
+           <div class="principal">$product.GetImageTag(222, 222)</div>
+	  <div class="hover">$product.GetImageTag(222, 222, hover")</div>
+     </a>
+     <h4 class="hidden-button">PREVIEW</h4>
+<div class="data">
+     <b class="product-name">
+         <a title="$escapedName" href="$uri">
+             $product.Name
+         </a>
+     </b>
+     <br/>
+	<div class="discount">$product.DiscountHightLight</div>
+	#if ($product.IsInStock)
+		<p class="price">
+			
+				#if ($product.HasBestPrice)
+					<span class="oldPrice"><span>De: </span>$product.ListPrice</span>
+				#end
+				<span class="newPrice"><span>Por: </span><em>$product.BestPrice</em></span>
+				
+			
+		</p>
+		
+		
+		
+		<vtex.cmc:giftListSendToCartButton />
+	#else
+		<p class="outOfStock">Produto Esgotado</p> 
+	#end
+	<!--<p class="quickView">$product.QuickView</p>-->
+	
+	<div class="buy-buttom" >
+		    $product.BottomBuy
+		</div>
+<!--	<p class="brand">$product.BrandLink</p>-->
+    #if ($product.GiftListWishedAmount > 0)
+        #if ($product.GiftListWishedAmount > 1)
+            <p class="gift-list-wished">$product.GiftListWishedAmount desejados</p>
+        #else
+            <p class="gift-list-wished">$product.GiftListWishedAmount desejado</p>
+        #end
+    #else
+        <p class="gift-list-wished not-wished">nenhum desejado</p>
+    #end
+    
+    #if ($product.GiftListPurchasedAmount > 0)
+        #if ($product.GiftListPurchasedAmount > 1)
+            <p class="gift-list-purchased">$product.GiftListPurchasedAmount comprados</p>
+        #else
+            <p class="gift-list-purchased">$product.GiftListPurchasedAmount comprado</p>
+        #end
+    #else
+        <p class="gift-list-purchased not-purchased">nenhum comprado</p>
+    #end
+    
+    <p class="gift-list-insert">$product.InsertSku</p> 
+</div>
