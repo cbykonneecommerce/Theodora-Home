@@ -50,4 +50,11 @@
           padding-right: 10px !important;
       }
   }
+
+  @media screen and (max-width: 450px) {
+    #home-content {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
   /**home-content/

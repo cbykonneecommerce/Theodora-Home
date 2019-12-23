@@ -6,6 +6,13 @@
 
 #wishlist {
     text-align: right;
+    max-width: 12em;
+    display: block;
+}
+
+
+#wishlist a {
+    width: 100%;;
 }
 .header-container {
     position: sticky;
