@@ -31,6 +31,19 @@ input {
     border-radius: 0px !important;
 }
 
+.glmanager-actions li, .giftlistinfo-actions .list-action li, .list-members li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.glmanager-actions .action-buy a {
+    background-color: transparent;
+    color: #919fc2;
+    font-weight: 200;
+    line-height: 0px;
+    padding: 0px;
+
+}
 #refer-a-friend-form-gift-list{
     padding: 2em;
 }
@@ -61,7 +74,7 @@ h2, h3, .giftlistinfo-description, .list-members, span  {
     color: #919fc2;
 }
 
-.admin-only.action-manage, li .data .quickview, .giftlist-print-wrapper, .giftlist-insertsku-wrapper, .resultado-busca-filtro .compare, .sendtocart-8, .quickView{
+ li .data .quickview, .giftlist-print-wrapper, .giftlist-insertsku-wrapper, .resultado-busca-filtro .compare, .sendtocart-8, .quickView{
     display: none !important;
 }
 
@@ -76,7 +89,7 @@ h2, h3, .giftlistinfo-description, .list-members, span  {
 }
 
 .giftlistinfo-event ul li{
-    padding-left: 1em;
+  /*  padding-left: 1em;*/
     display: inline-block;
     color: #919FC1;
 }
@@ -280,9 +293,7 @@ legend {
 .glmanager-type.giftlisttype-3 h2, .glmanager-type.giftlisttype-4 h2{
     margin-bottom: 1em;
 }
-.action-manage {
-    display: none;
-}
+
 td{
     color:#919fc2;
   }
@@ -292,8 +303,47 @@ td{
     margin-bottom: 0.7em;
 }
 
+.giftlistinfo-actions .list-action .action-manage {
+    display: block !important;
+}
 
-  @media (max-width: 600px)  {
+.giftlistinfo-event-countdown {
+    display: block !important;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.days {
+    border: solid 1px;
+    padding: 4px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.action-buy a, .button-send-to-cart, .giftlistinfo-actions .list-action li a{
+    background-color: #919FC1;
+    border: 0 none;
+    border-radius: 6px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+.list-action {
+    display: inline-flex;
+}
+
+.giftlistinfo-actions .list-action li {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+  @media (max-width: 900px)  {
     
     .giftlist-table  thead tr th, .giftlist-table tbody tr td{
         text-align: center;
@@ -304,5 +354,15 @@ td{
         margin-left: 8em !important;
         width: 400px !important;
         height: auto !important;
+    }
+
+    .list-action {
+        display: block;
+    }
+
+    .giftlistinfo-actions .list-action li {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: -0.8em;
     }
 }

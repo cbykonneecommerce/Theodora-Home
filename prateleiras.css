@@ -90,3 +90,10 @@
         float: left;
     }
 }
+
+@media screen and (min-width: 1891px) {
+    #colection-showcase {
+        
+        margin-left: 4.5em !important;
+    }
+}
