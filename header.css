@@ -273,6 +273,10 @@
     #backtotop {
         display: none;
     }
+
+    .header .search {
+        margin-top: -10px;
+    }
 }
 
 @media screen and (max-width: 1450px) { 
@@ -297,4 +301,45 @@
         max-width: 40% !important;
     }
 
+}
+
+
+@media screen and (max-width: 600px) {
+   
+    .ui-autocomplete {
+        width: 90% !important;
+    }
+}
+
+
+@media screen and (max-width: 1050px) and (min-width: 700px){
+    #desktop-cart img {
+        max-width: 3em !important;
+        margin-left: 26px;
+    }
+
+    .logo a img {
+        max-width: 54%;
+    }
+
+
+    .header .search .fulltext-search-box {
+        width: 74%;
+    }
+
+    #hamburguer .btn {
+        margin-top: -4px;
+    }
+
+
+    .header .search .btn-buscar {
+        width: 3em;
+    }
+
+    #wishlist {
+        text-align: right;
+        width: 8em;
+        margin-right: -50px;
+        margin-left: -88px;
+    }
 }

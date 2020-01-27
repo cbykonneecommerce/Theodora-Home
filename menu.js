@@ -69,13 +69,6 @@ $(".depto-marcas").hover(()=>{
 
 
 
-
-
-
-
-
-
-
 //  Controle para menu mobile 
 
 

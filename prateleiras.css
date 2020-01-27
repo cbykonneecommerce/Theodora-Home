@@ -72,6 +72,108 @@
     margin-left: 4.5em;
 }
 
+
+
+
+
+.search-single-navigator {
+    display: none !important;
+}
+
+.search-multiple-navigator {
+    display: block !important;
+}
+
+
+
+#filter-bar {
+    font-size: 25px !important;
+    line-height: 1em !important;
+    background-color: #007DB8;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: -0.54em;
+    color: white !important;
+}
+
+fieldset.refino label {
+    display: block;
+    margin-bottom: -16px;
+}
+
+fieldset.refino, fieldset.refino-marca {
+    border-bottom: solid 1px #C8C8C8;
+}
+
+fieldset.refino h5, fieldset.refino-marca h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+fieldset.refino .ver-filtros, fieldset.refino-marca .ver-filtros{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    float: right;
+    margin-left: 16px;
+}
+
+fieldset.refino a, fieldset.refino-marca a {
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+input[type=checkbox] {
+    margin: 4px 0px 10px;
+    -webkit-appearance: none;
+    background-color: white;
+    border: 2px solid #8695ac;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    padding-left: 23px;
+    ms-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+input[type=checkbox]:checked:after {
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top: 1px;
+    left: 9px;
+    color: black;
+}
+
+.filtro-btn-mobile {
+    text-align: center;
+    background-color: #909FC1;
+    color: white;
+}
+
+.filtro-btn-mobile h4 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+.search-multiple-navigator h3 a {
+    display: none
+}
+
 @media screen and (min-width: 450px) and (max-width: 1890px) {
     #colection-showcase {
         width: 89%;
@@ -85,9 +187,13 @@
         margin-left: 2.9em;
     }
 
-    .prateleira ul .moveis {
+    .prateleira ul li {
         width: 50% !important;
         float: left;
+    }
+
+    .side-banner {
+        display: none;
     }
 }
 
@@ -95,5 +201,33 @@
     #colection-showcase {
         
         margin-left: 4.5em !important;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .prateleira ul li {
+        width: 100% !important;
+        float: inherit;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+    #departament-extra-menu {
+        display: none;
+    }
+
+    .prateleira ul li {
+        float: left
+     }
+}
+
+
+@media screen and (max-width: 450px) and (min-width: 352px) { 
+    .prateleira .box-item {
+        height: 290px;
     }
 }

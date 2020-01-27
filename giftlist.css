@@ -313,7 +313,22 @@ td{
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.giftlistsku-input-wishedamt {
+    text-align: center;
+}
 
+.inputedit.edit {
+    margin-left: 1em;
+}
+
+.ko-grid-pageLinks{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.glstat-table-title {
+    display: none;;
+}
 .days {
     border: solid 1px;
     padding: 4px;
