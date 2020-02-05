@@ -10,7 +10,9 @@
 .copy-right p {
     color: white;
 }
-
+.footer b, .footer a {
+    font-size: 12px;
+}
 #footercbyk {
     width: 3em;
     margin-left: 1em;

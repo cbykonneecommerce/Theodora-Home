@@ -1,5 +1,10 @@
 .homeTitles {
     color: #919FC1;
+    
+}
+
+.homeTitles h3 {
+    font-size: 20px;
 }
 
 .owl-controls .owl-pagination .owl-page {
@@ -23,26 +28,30 @@
 }
 
 
+
 @media screen and (min-width: 450px) and (max-width: 1890px){
     #bannerA1, #bannerA2 {
-        height: 242px !important;
+        height: 203px !important;
     }
     #bannerB1, #bannerB2, #bannerB3 {
-        height: 416px !important;
+        height: 350px !important;
     }
 
     #bannerC1, #bannerC2 {
-        height: 456px !important;
+        height: 386px !important;
     }
     #bannerDestinos1, #bannerDestinos2, #bannerDestinos3, #bannerDestinos4 {
-        height: 117px !important; 
+        height: 97px !important; 
 
     }
     #bannerD1 {
-        height: 470px !important;
+        height: 398px !important;
     }
   }
 
+  .owl-carousel#carouselmarcas .owl-item .item a img {
+      height: 4em;
+  }
 
   @media screen and (max-width: 450px) {
       #home-content {

@@ -7,12 +7,14 @@
     background-color: #b2bcd3;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    color: white;
+    color: white !important;
     margin-top: -47px;
-    position: absolute;
-    text-align: center;
-    padding-left: 4em;
-    padding-right: 4em;
+    text-align: center !important;
+    /*padding-left: 4em;
+    padding-right: 4em;*/
+    width: 100% !important;
+    position: relative !important;
+    opacity: 0.8;
 }
 
 .prateleira .product-name a {

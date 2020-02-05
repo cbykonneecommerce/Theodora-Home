@@ -35,3 +35,15 @@ select, fieldset {
         margin-top: 1em;
     }
 }
+
+
+@media screen and (min-width: 1051px) {
+    .container-fluid {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+    .n4colunas > ul > li {
+        width: 24.3333% !important;
+    }
+}
+

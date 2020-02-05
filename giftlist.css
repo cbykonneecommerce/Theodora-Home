@@ -1,10 +1,18 @@
-#menu-giftlist {
+/*#menu-giftlist {
     background-image: url(/arquivos/box-giftlist.png);
     height: 23em;
     background-size: contain;
     width: 20em;
     background-position: center center;
     background-repeat: no-repeat;
+}*/
+
+#menu-giftlist ul li {
+    background-color: #91A0C2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+
 }
 
 input {
@@ -132,6 +140,7 @@ legend {
 #menu-giftlist ul {
     padding-left: 2em;
     padding-top: 8em;
+    width:20em;
 }
 
 .page-number {
@@ -141,7 +150,10 @@ legend {
     padding-left: 1em;
 }
 #menu-giftlist li a {
-    background-color: transparent !important;
+    color: white;
+    text-transform: uppercase;
+    padding:20px
+
 }
 
 #giftlistsearchform .giftlistsearchul li select, #giftlistsearchform .giftlistsearchul li input,
@@ -316,7 +328,9 @@ td{
 .giftlistsku-input-wishedamt {
     text-align: center;
 }
-
+.glsearch-title, h2 {
+    font-size: 20px !important;
+}
 .inputedit.edit {
     margin-left: 1em;
 }
