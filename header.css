@@ -195,7 +195,7 @@ input {
 }
 .deptonav {
     position: absolute;
-    width: 76%;
+    width: 75%;
     background-color: #fff;
     /*opacity: 0.92;*/
     z-index: 9999999999;
