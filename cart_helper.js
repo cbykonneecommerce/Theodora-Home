@@ -1,5 +1,6 @@
 $(".qtd-field").prop("disabled", true);
 
+
 setTimeout(()=>{
     $("#mini-cart-admake .mini-cart-item .detalhes").append(`
     <button class="btn btn-menos" style="color: #919FC1;background-color: transparent;font-size: 30px;outline-style: none;
@@ -10,6 +11,14 @@ setTimeout(()=>{
     `);
 
 
+ vtexjs.checkout.getOrderForm()
+.then(function(orderForm) {
+
+    for(let i = 0; i < orderForm.items.length; i++) {
+        $($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+    }
+ 
+});
 
 $(".btn-menos").on('click',  function(event) {
     var rowindex = $(this).closest('.mini-cart-item').index();
