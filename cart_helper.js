@@ -1,5 +1,13 @@
-$(".qtd-field").prop("disabled", true);
 
+function formatReal( int )
+{
+        var tmp = int+'';
+        tmp = tmp.replace(/([0-9]{2})$/g, ",$1");
+        if( tmp.length > 6 )
+                tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+
+        return tmp;
+}
 
 setTimeout(()=>{
     $("#mini-cart-admake .mini-cart-item .detalhes").append(`
@@ -10,14 +18,16 @@ setTimeout(()=>{
         box-shadow: none;">+</button>
     `);
 
-
+    $(".qtd-field").prop("disabled", true);
  vtexjs.checkout.getOrderForm()
 .then(function(orderForm) {
 
     for(let i = 0; i < orderForm.items.length; i++) {
         $($(".qtd-field")[i]).val(orderForm.items[i].quantity)
     }
- 
+
+    $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
+ //formatReal(orderForm.value)
 });
 
 $(".btn-menos").on('click',  function(event) {
@@ -47,6 +57,7 @@ $(".btn-menos").on('click',  function(event) {
   .done(function(orderForm) {
     //alert('Items atualizados!');
     console.log(orderForm);
+    $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
   });
 }
 });
@@ -77,8 +88,9 @@ $(".btn-mais").on('click',  function(event) {
     return vtexjs.checkout.updateItems([updateItem], null, false);
   })
   .done(function(orderForm) {
-    alert('Items atualizados!');
+    //alert('Items atualizados!');
     console.log(orderForm);
+    $("#mini-cart-admake-total").text("R$ " + formatReal(orderForm.value));
   });
 
 });
