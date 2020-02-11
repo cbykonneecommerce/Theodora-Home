@@ -5,8 +5,8 @@
 .hidden-button {
     display: none;
     background-color: #b2bcd3;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     color: white !important;
     margin-top: -47px;
     text-align: center !important;
@@ -15,6 +15,7 @@
     width: 100% !important;
     position: relative !important;
     opacity: 0.8;
+    font-size: 15px;
 }
 
 .prateleira .product-name a {
@@ -106,7 +107,7 @@ fieldset.refino label {
 }
 
 fieldset.refino, fieldset.refino-marca {
-    border-bottom: solid 1px #C8C8C8;
+   /* border-bottom: solid 1px #C8C8C8;*/
 }
 
 fieldset.refino h5, fieldset.refino-marca h5 {

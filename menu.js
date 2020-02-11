@@ -161,3 +161,17 @@ $(".dropdown-btn#marcas").toggle(() => {
     $(".dropdown-btn#marcas i").attr('class', 'fa fa-angle-down');
 })
 
+
+
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()> 150)
+     {
+        $('#storenavsecondary').fadeOut();
+     }
+    else
+     {
+      $('#storenavsecondary').fadeIn();
+     }
+ });

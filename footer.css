@@ -1,18 +1,23 @@
+#newsletter {
+    background-color: #919FC1;
+}
 
-.footer, .copy-right{
+.footer, .copy-right {
     background-color: #919FC1
 }
 
-.footer b, .footer li a, .footer li span, .footer a{
+.footer b, .footer li a, .footer li span, .footer a {
     color: white;
 }
 
 .copy-right p {
     color: white;
 }
+
 .footer b, .footer a {
     font-size: 12px;
 }
+
 #footercbyk {
     width: 3em;
     margin-left: 1em;
@@ -28,15 +33,15 @@
     color: white;
 }
 
-#newsletterLink{
-    font-size: 39px;
+#newsletterLink {
+    font-size: 30px;
 }
 
-.footer .fa{
+.footer .fa {
     font-size: x-large;
 }
 
-#https{
+#https {
     width: 3em;
 }
 
@@ -44,51 +49,77 @@
     width: 9em;
 }
 
-#logo-branca-th{
+#logo-branca-th {
     width: 5em;
 }
 
-
 #newsletterwrapper {
-    background-color:white;
-    width: 60%;
-    height: 2.6em;
+    background-color: #919FC1;
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
+
 #email-input {
     border-radius: 0px;
-    margin-right: 1em;
+    margin-right: -2em;
     margin-bottom: 1.2em;
     border-color: transparent;
-    width: 80%;
+    width: 20%;
 }
 
-#emailcatcher{
+#name-input {
+    border-radius: 0px;
+    margin-bottom: 1.2em;
+    border-color: transparent;
+    width: 20%;
+}
+
+#emailcatcher {
     display: inline-block;
     color: #919FC1;
     background-color: white;
 }
 
-
-@media screen and (max-width: 1450px) { 
+@media screen and (max-width: 1450px) {
     #newsletterwrapper {
-        width: 90%;
-        height: 2.5em;
+        width: 100%;
+        height: auto;
     }
-
-    #email-input{
+    #email-input {
         padding-bottom: 0;
-
     }
 }
 
-
-@media screen and (min-width: 500px) { 
+@media screen and (min-width: 500px) {
     .col-pague-com img {
         margin-left: -2em;
     }
 }
-@media screen and (min-width: 1800px) { 
+
+@media screen and (min-width: 1800px) {
     .col-pague-com img {
         margin-left: -3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #name-input {
+  
+        width: 100%;
+    }
+    #email-input {
+        width: 100%;
+        margin-left: -7px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #name-input {
+        margin-right: 1em
+    }
+    #email-input {
+         margin-left: 1em
     }
 }
