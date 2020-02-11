@@ -454,3 +454,12 @@ input {
         padding-right: 8em;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    #coracao-icon {
+        max-width: 70% !important;
+    }
+    .btn-mini-cart img {
+        max-width: 80% !important;
+    }
+}

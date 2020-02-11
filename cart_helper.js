@@ -1,3 +1,4 @@
+$(".qtd-field").prop("disabled", true);
 
 
 setTimeout(()=>{
@@ -9,45 +10,69 @@ setTimeout(()=>{
         box-shadow: none;">+</button>
     `);
 
-    let value = $(".qtd-field").val();
-$(".btn-mais").click(() => {
-    let value = $(".qtd-field").val();
-$(".qtd-field").val(value++);
 
-vtexjs.checkout.getOrderForm()
+ vtexjs.checkout.getOrderForm()
+.then(function(orderForm) {
+
+    for(let i = 0; i < orderForm.items.length; i++) {
+        $($(".qtd-field")[i]).val(orderForm.items[i].quantity)
+    }
+ 
+});
+
+$(".btn-menos").on('click',  function(event) {
+    var rowindex = $(this).closest('.mini-cart-item').index();
+    console.log('rowindex', rowindex);
+    let me =  $(".qtd-field")[rowindex];
+   let value = parseInt($($(".qtd-field")[rowindex]).val())
+   console.log(me, value);
+
+   if (value > 1) {
+       console.log("entrei")
+       value -=  1;
+       console.log(value)
+   // $(me).val(value)
+    $($(".qtd-field")[rowindex]).val(value)
+
+    vtexjs.checkout.getOrderForm()
   .then(function(orderForm) {
     var itemIndex = 0;
-    var item = orderForm.items[itemIndex];
+    var item = orderForm.items[rowindex];
     var updateItem = {
-      index: itemIndex,
-      quantity: $(".qtd-field").val()
+      index: rowindex,
+      quantity:  value
     };
     return vtexjs.checkout.updateItems([updateItem], null, false);
   })
   .done(function(orderForm) {
-    alert('Items atualizados!');
+    //alert('Items atualizados!');
     console.log(orderForm);
   });
+}
 });
 
 
 
-$(".btn-menos").click(() => {
-    
-   let index = $('.btn-menos').index(this); 
-   let me =  $('.btn-menos')[index];
-   let value = $($(".qtd-field")[index]).val()
-if ($(".qtd-field").val() > 1) {
-    $($(".qtd-field")[index]).val(value--)
-}
+$(".btn-mais").on('click',  function(event) {
+    var rowindex = $(this).closest('.mini-cart-item').index();
+    console.log('rowindex', rowindex);
+    let me =  $(".qtd-field")[rowindex];
+   let value = parseInt($($(".qtd-field")[rowindex]).val())
+   console.log(me, value);
 
-vtexjs.checkout.getOrderForm()
+  
+       value +=  1;
+       console.log(value)
+   // $(me).val(value)
+    $($(".qtd-field")[rowindex]).val(value)
+
+    vtexjs.checkout.getOrderForm()
   .then(function(orderForm) {
     var itemIndex = 0;
-    var item = orderForm.items[itemIndex];
+    var item = orderForm.items[rowindex];
     var updateItem = {
-      index: itemIndex,
-      quantity:  $($(".qtd-field")[index]).val()
+      index: rowindex,
+      quantity:  value
     };
     return vtexjs.checkout.updateItems([updateItem], null, false);
   })
@@ -56,6 +81,6 @@ vtexjs.checkout.getOrderForm()
     console.log(orderForm);
   });
 
-})
-},1000)
+});
 
+},1000)
