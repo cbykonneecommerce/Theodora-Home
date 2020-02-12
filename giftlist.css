@@ -1,11 +1,18 @@
 #menu-giftlist {
     background-image: url(/arquivos/backcasamento.jpg);
-    height: auto;
+    height: 48em;
     background-size: contain;
-    width: 20em;
+    
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 0.5;
+   /* opacity: 0.5;*/
+}
+
+#menu-giftlist ul {
+    padding-left: 0em !important;
+    padding-top: 11em;
+    margin-left: -1em;
+    width: 100%;
 }
 
 #menu-giftlist ul li {

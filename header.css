@@ -127,6 +127,7 @@ input {
     color: #919FC1;
     font-size: 2.5em;
     border-color: transparent;
+    padding-left: 0 !important;
 }
 
 .header .mini-cart span.badge {
@@ -348,6 +349,13 @@ input {
     background-position: center;
     width: 20px;
     background-size: contain;
+    border: 1px solid #ccc;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom: 1px solid #919FC1 !important;
+    border-radius: 0px;
+    margin-left: -2.5%;
 }
   
   /* Some media queries for responsiveness */
@@ -377,6 +385,11 @@ input {
     }
     .header .button-menu-xs {
         margin-top: -10px;
+    }
+
+    .header .search .fulltext-search-box {
+        width: 96% !important;
+
     }
 }
 
@@ -461,5 +474,13 @@ input {
     }
     .btn-mini-cart img {
         max-width: 80% !important;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .header .search .fulltext-search-box {
+        width: 94% !important;
+
     }
 }
