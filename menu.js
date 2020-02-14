@@ -1,3 +1,12 @@
+$(".depto-novidades").hover(()=>{
+    
+    $(".depto-novidades#novidades").show()
+}, 
+()=>{
+    $(".depto-novidades#novidades").hide()
+})
+
+
 $(".depto-rouparia").hover(()=>{
     
     $(".depto-rouparia#rouparia").show()
