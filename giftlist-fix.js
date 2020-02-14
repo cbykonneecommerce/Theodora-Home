@@ -9,3 +9,11 @@ myLinkEditor = myLinkEditor.toLowerCase();
 
 $(".giftlistinfo-actions .list-action .action-edit a").attr('href', myLinkEditor);
 
+
+
+$("#giftlistname").keyup(function () {
+   let urlName = $("#giftlistname").val();
+   $("#giftlisturl").val(urlName.replace(/ /g, '-'));
+​
+​
+});

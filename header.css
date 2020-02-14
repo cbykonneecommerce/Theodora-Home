@@ -296,7 +296,9 @@ input {
         height: 2em;
   }
 
-
+  .ui-autocomplete {
+      z-index: 9999999999 !important;
+  }
 
   .v2-vtexsc-cart.vtexsc-cart {
         display: none !important;

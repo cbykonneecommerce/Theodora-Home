@@ -3,7 +3,7 @@
     height: 48em;
     background-size: contain;
     
-    background-position: center center;
+    /*background-position: center center;*/
     background-repeat: no-repeat;
    /* opacity: 0.5;*/
 }
@@ -11,7 +11,7 @@
 #menu-giftlist ul {
     padding-left: 0em !important;
     padding-top: 11em;
-    margin-left: -1em;
+    margin-left: 0em;
     width: 100%;
 }
 
@@ -24,6 +24,9 @@
 
 }
 
+#giftlistform .basic label, #giftlistform .image label, #giftlistform #members-box fieldset label, #giftlistform .event fieldset  .giftlistul label{
+    display: block;
+}
 input {
     border-radius: 0px;
     color: #919fc2 
@@ -129,6 +132,10 @@ h2, h3, .giftlistinfo-description, .list-members, span  {
     text-transform: uppercase;
 }
 
+.giftlistsearchul .glsearch-type, .giftlistsearchul .glsearch-eventlocation,  .giftlistsearchul .glsearch-eventlocation, .giftlistsearchul .glsearch-eventcity{
+    display: none !important;
+}
+
 
 .member .title {
     margin-bottom: 1em;
@@ -149,7 +156,7 @@ legend {
 #menu-giftlist ul {
     padding-left: 2em;
     padding-top: 8em;
-    width:20em;
+    
 }
 
 .page-number {
@@ -403,4 +410,15 @@ td{
         margin-right: 0px;
         margin-bottom: -0.8em;
     }
+
+    #menu-giftlist {
+        height: 40em;
+    }
+
+    #menu-giftlist ul {
+        width: 100%;
+        margin-left: 0em;
+        padding-top: 10em;
+    }
+    
 }
