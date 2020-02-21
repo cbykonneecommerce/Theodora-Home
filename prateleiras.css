@@ -201,10 +201,10 @@ input[type=checkbox]:checked:after {
 }
 
 @media screen and (min-width: 1891px) {
-    #colection-showcase {
+    /*#colection-showcase {
         
         margin-left: 4.5em !important;
-    }
+    }*/
 }
 
 

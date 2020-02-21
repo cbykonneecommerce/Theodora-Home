@@ -52,7 +52,7 @@ input {
 }
 
 .glmanager-actions li, .giftlistinfo-actions .list-action li, .list-members li {
-    padding-top: 5px;
+  
     padding-bottom: 5px;
 }
 
@@ -62,6 +62,7 @@ input {
     font-weight: 200;
     line-height: 0px;
     padding: 0px;
+    display: none;
 
 }
 #refer-a-friend-form-gift-list{
@@ -153,6 +154,15 @@ legend {
     border-bottom: none !important;
 }
  
+
+.giftlist-table .giftlist-header {
+    border-bottom: solid 1px #919FC1;
+}
+
+.giftlist-header tr th {
+    height: 40px;
+}
+
 #menu-giftlist ul {
     padding-left: 2em;
     padding-top: 8em;
@@ -254,10 +264,13 @@ legend {
   }*/
 
   .is-checklist-item.from-list.first.last input {
-    min-height: 19px;
+    min-height: 30px;
     margin-right: 4px;
   }
 
+  .hidden-button {
+    margin-top: -37px !important; 
+  }
 
 
   .giftlist.giftlist-form.giftlist-create #giftlistname{
@@ -388,6 +401,16 @@ td{
     margin-left: 8px;
     margin-right: 8px;
 }
+
+
+.buy-buttom {
+    background: #919fc2
+}
+.buy-buttom a{
+    color: white !important;
+}
+
+
   @media (max-width: 900px)  {
     
     .giftlist-table  thead tr th, .giftlist-table tbody tr td{

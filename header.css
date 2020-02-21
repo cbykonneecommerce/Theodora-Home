@@ -8,6 +8,14 @@
 }
 
 
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none !important;
+    background: none !important;
+}
+
+
+
+
 #wishlist {
     text-align: right;
     max-width: 12em;

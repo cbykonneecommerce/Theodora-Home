@@ -1,0 +1,115 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Lista</title>
+     <vtex:metaTags/>
+     <vtex:template id="commonStyles" />
+     <link rel="stylesheet" href="/arquivos/institucional.css" />
+     <link rel="stylesheet" href="/arquivos/giftlist.css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ </head>
+ 
+ <body id="giftlist-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="institucional-extra-top"></div>                    
+ 
+         <section id="institucional-content" class="container">
+ 
+            
+ 
+ 
+             <div class="conteudo-giftlist">
+                <!-- <vtex:contentPlaceHolder id="quem-somos" /> -->
+                                 <div id="content" class="row">
+                     
+                     
+                     <div class="col-sm-4" id="menu-giftlist">
+                     <vtex:template id="new-GiftList-Sidebar-nav" />
+                      
+                 </div>
+                 <div class="col-sm-8" id="collections">
+                 
+               
+                         <!-- Controle: Informações de uma Lista -->
+                         <vtex.cmc:GiftListInfoV2 />
+                         <!-- /Controle: informações de uma Lista -->
+                         <vtex.cmc:GiftListInsertSkuV2 popup="true" />
+                         
+                         <!--bololo de testes-->
+                          
+                   
+                        
+                        
+                 </div>
+                 
+                     
+                 </div>
+                 <div class="row" style="text-align: center">
+                     
+                        <vtex.cmc:giftListSendToCartButton />
+                        <img src="/arquivos/linha-gift.png" style="margin-top:1em"/>
+                        <div class="collectionWrap">
+                            <vtex.cmc:giftListShelfPaged layout="1daabf0d-5f18-47a2-8b3f-709dc17dc522" itemCount="12" columnCount="3" />
+                        </div>
+                        <vtex.cmc:giftListSendToCartButton />
+                 </div>
+             </div>
+ 
+         </section><!-- #content --> 
+
+         
+         <div id="institucional-extra-bottom"></div>
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="commonScripts" />
+      <script src="/arquivos/giftlist-fix.js"></script>
+      <script>
+         
+   $('body').bind("DOMSubtreeModified",function(){
+     $(".hidden-button").css("display", "none");$('.n3colunas li').mouseenter(function() {
+       $(".hidden-button",this).css("display", "block");
+     })
+   
+     $('.n3colunas li').mouseleave(function() {
+         $(".hidden-button",this).css("display", "none");
+       })
+        
+   
+   
+   
+       $(".product-image .hover", "body").hide();
+       $( ".product-image", "body" ).mouseenter( function(){
+         $(".principal", this).hide(); 
+         $(".hover", this).show()
+       } ).mouseleave( function(){
+         $(".hover",this).hide();
+         $(".principal", this).show()
+       } );
+   });
+   
+   
+     </script>
+ </html>
