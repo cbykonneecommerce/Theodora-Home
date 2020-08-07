@@ -1,3 +1,14 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none !important;
+    width: 3px !important;
+    height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
 .welcome-bar{
     background-color: #919FC1 !important;
     
@@ -14,7 +25,9 @@
 }
 
 
-
+#admake-advanced-filter {
+    display: none !important;
+}
 
 #wishlist {
     text-align: right;
@@ -181,9 +194,6 @@ input {
 }
 
 
-#admake-advanced-filter {
-    display: none !important;
-}
 
 
 .menu-departamento{
@@ -413,19 +423,6 @@ input {
     }
 }
 
-@media screen and (min-width: 1451px) { 
-   /* .link-logo img {
-        max-width: 16%;
-    }*/
-
-    #desktop-cart img{
-       /* max-width: 42% !important;*/
-    }
-    #coracao-icon {
-       /* max-width: 40% !important;*/
-    }
-
-}
 
 
 
